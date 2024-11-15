@@ -18,6 +18,7 @@ h2{
 
 nav{
     padding-bottom: 30px;
+    
 }
 
 ul li a{
@@ -60,7 +61,7 @@ li{
 
 footer{
     text-align: center;
-    background-color: rgb(5, 82, 5);
+    background-color: #124314;
     height: 59px;
     padding: 10px;
     color: white;
