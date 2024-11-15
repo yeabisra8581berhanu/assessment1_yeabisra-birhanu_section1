@@ -3,66 +3,132 @@ header{
     height: 80px;
     text-align: center;
     padding: 10px;
-    
-}h2{
+}
+
+h2{
     margin-left: 100px;
-   
-   
-}.product h2{
+}
+
+.product h2{
     color: red; 
     text-align: center;
     justify-content: center;
     margin-left: 0px;
 }
 
-
 nav{
     padding-bottom: 30px;
 }
+
 ul li a{
     text-decoration: none;
     color: rgb(139, 224, 139);
 }
+
 ul{ 
     display: flex;
     column-gap: 100px;
     align-items: center;
     justify-content: center;
-
 }
+
 li{
     list-style-type: none;
-
-   
 }
+
 .product-list{
     display: flex;
     column-gap: 50px;
     justify-content: center;
     margin-left: 30px;
     text-align: center;
-  
-
 }
+
 .product{  
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     width: 250px;
     height: 550px;
     align-items: center;
     vertical-align: middle;
-    padding: 15px 15px 15px 15px;
-    
-}.product img{
+    padding: 15px;
+}
+
+.product img{
     width: 250px;
     object-fit: cover;
-}footer{
+}
+
+footer{
     text-align: center;
     background-color: rgb(5, 82, 5);
     height: 59px;
     padding: 10px;
     color: white;
     margin-top: 200px;
-}.price{
+}
+
+.price{
     font-size: 20px;
     color: rgb(54, 142, 54);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h2{
+        margin-left: 0;
+        font-size: 24px;
+    }
+    
+    ul{
+        flex-direction: column;
+        column-gap: 0;
+    }
+    
+    .product-list{
+        flex-direction: column;
+        margin-left: 0;
+        row-gap: 20px;
+    }
+    
+    .product{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .product img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header{
+        height: 60px;
+        padding: 5px;
+    }
+    
+    nav{
+        padding-bottom: 20px;
+    }
+    
+    ul{
+        padding: 0;
+    }
+    
+    li{
+        padding: 5px 0;
+    }
+    
+    .product-list{
+        row-gap: 15px;
+    }
+    
+    footer{
+        height: 50px;
+        padding: 5px;
+    }
+    
+    .price{
+        font-size: 18px;
+    }
 }
